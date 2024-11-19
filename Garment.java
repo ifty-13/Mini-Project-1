@@ -5,9 +5,10 @@ public class Garment {
         
         
         
-        System.out.println("Yessss");
+        
         System.out.println("Germany");
-        System.out.println("Bayern");
+        
+        System.out.println("Garments");
         
     }
 }
