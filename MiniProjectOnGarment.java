@@ -89,11 +89,23 @@ class Order {
     }
 
     double calculateTotalAmount() {
-        for (Garment g : garments) {
-            totalAmount = totalAmount + g.price;
+        for (Garment a : garments) {
+            totalAmount = totalAmount + a.price;
         }
         return totalAmount;
 
+    }
+
+    void printOrderDetails() {
+        System.out.println("--------------------------");
+        System.out.println("Order Details");
+        System.out.println("--------------------------");
+        for (Garment a : garments) {
+            System.out.println("Name: " + a.name);
+            System.out.println("Price: " + a.price);
+            System.out.println("Description: " + a.description);
+            System.out.println("--------------------------");
+        }
     }
 }
 
