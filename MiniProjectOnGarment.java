@@ -8,11 +8,12 @@ public class MiniProjectOnGarment {
     public static void main(String[] args) {
         Garment s1 = new Garment();
         Order s2 = new Order();
-        s1.name = "Silk";
-        s1.description = "Good Product";
+        s1.name = "Jersey";
+        s1.description = "Best Quality";
         s1.price = 1000;
         double x = s1.calculateDiscountPrice(10);
         System.out.println(x);
+        s2.addGarment(s1);
         s2.printOrderDetails();
 
     }
