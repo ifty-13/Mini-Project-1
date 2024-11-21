@@ -95,27 +95,27 @@ class Order {
         return totalAmount;
 
     }
+}
 
-    class Inventory {
+class Inventory {
 
-        List<Garment> garments;
+    List<Garment> garments;
 
-        void addGarment(Garment garment) {
-            garments.add(garment);
-        }
-
-        void removeGarment(String id) {
-            garments.remove(id);
-        }
-
-        Garment findGarment(String id) {
-            for (Garment a : garments) {
-                if (a.id == id) {
-                    return a;
-                }
-            }
-            return null;
-        }
-
+    void addGarment(Garment garment) {
+        garments.add(garment);
     }
+
+    void removeGarment(String id) {
+        garments.remove(id);
+    }
+
+    Garment findGarment(String id) {
+        for (Garment a : garments) {
+            if (a.id == id) {
+                return a;
+            }
+        }
+        return null;
+    }
+
 }
