@@ -24,6 +24,11 @@ class Garment {
         this.stockQuantity = quantity;
     }
 
+    double calculateDiscountPrice(double discountPercentage) {
+        double discount = price * (discountPercentage / 100);
+        return discount;
+    }
+
 }
 
 class Fabric {
@@ -32,6 +37,11 @@ class Fabric {
     public String type;
     public String color;
     public double pricePerMeter;
+
+    double calculateCost(double meters) {
+        double newPrice = pricePerMeter * meters;
+        return newPrice;
+    }
 }
 
 class Supplier {
@@ -39,7 +49,6 @@ class Supplier {
     public String id;
     public String name;
     public String contactInfo;
-
     List<Fabric> suppliedFabric = new ArrayList<>();
 
 }
