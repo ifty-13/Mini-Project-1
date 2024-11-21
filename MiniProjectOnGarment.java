@@ -55,6 +55,10 @@ class Supplier {
         suppliedFabric.add(fabric);
     }
 
+    List<Fabric> getSuppliedFabrics() {
+        return suppliedFabric;
+    }
+
 }
 
 class Customer {
