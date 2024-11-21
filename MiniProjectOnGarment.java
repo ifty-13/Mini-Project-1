@@ -13,6 +13,7 @@ public class MiniProjectOnGarment {
         s1.price = 1000;
         double x = s1.calculateDiscountPrice(10);
         System.out.println(x);
+        s2.printOrderDetails();
 
     }
 }
