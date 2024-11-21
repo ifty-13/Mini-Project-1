@@ -6,6 +6,12 @@ import java.util.List;
 public class MiniProjectOnGarment {
 
     public static void main(String[] args) {
+        Garment s1 = new Garment();
+        s1.name = "Silk";
+        s1.description = "Good Product";
+        s1.price = 1000;
+        double x = s1.calculateDiscountPrice(10);
+        System.out.println(x);
 
     }
 }
