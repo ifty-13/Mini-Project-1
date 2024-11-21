@@ -99,5 +99,14 @@ class Order {
     class Inventory {
 
         List<Garment> garments;
+
+        void addGarment(Garment garment) {
+            garments.add(garment);
+        }
+
+        void removeGarment(String id) {
+            garments.remove(id);
+        }
+
     }
 }
