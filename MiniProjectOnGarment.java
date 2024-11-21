@@ -88,9 +88,16 @@ class Order {
         garments.add(garment);
     }
 
-}
+    double calculateTotalAmount() {
+        for (Garment g : garments) {
+            totalAmount = totalAmount + g.price;
+        }
+        return totalAmount;
 
-class Inventory {
+    }
 
-    List<Garment> garments;
+    class Inventory {
+
+        List<Garment> garments;
+    }
 }
