@@ -7,6 +7,7 @@ public class MiniProjectOnGarment {
 
     public static void main(String[] args) {
         Garment s1 = new Garment();
+        Order s2 = new Order();
         s1.name = "Silk";
         s1.description = "Good Product";
         s1.price = 1000;
