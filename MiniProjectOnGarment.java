@@ -108,5 +108,14 @@ class Order {
             garments.remove(id);
         }
 
+        Garment findGarment(String id) {
+            for (Garment a : garments) {
+                if (a.id == id) {
+                    return a;
+                }
+            }
+            return null;
+        }
+
     }
 }
