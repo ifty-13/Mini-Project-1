@@ -1,4 +1,7 @@
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MiniProjectOnGarment {
 
     public static void main(String[] args) {
@@ -24,9 +27,19 @@ class Garment {
 
 class Fabric {
 
+    public String id;
+    public String type;
+    public String color;
+    public double pricePerMeter;
 }
 
 class Supplier {
+
+    public String id;
+    public String name;
+    public String contactInfo;
+
+    List<Fabric> suppliedFabric = new ArrayList<>();
 
 }
 
