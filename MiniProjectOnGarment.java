@@ -72,8 +72,9 @@ class Customer {
 
     }
 
-    // List<Order> viewOrders() {
-    // }
+    List<Order> viewOrders() {
+        return null;
+    }
 }
 
 class Order {
