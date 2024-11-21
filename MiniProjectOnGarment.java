@@ -82,6 +82,11 @@ class Order {
     public Date orderDate;
     public List<Garment> garments = new ArrayList<>();
     private double totalAmount;
+
+    void addGarment(Garment garment) {
+        garments.add(garment);
+    }
+
 }
 
 class Inventory {
